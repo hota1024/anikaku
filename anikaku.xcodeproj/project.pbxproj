@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A188770258AFE1A0011C6AC /* g_brushtappitsu_freeR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A18876F258AFE1A0011C6AC /* g_brushtappitsu_freeR.ttf */; };
 		2A6A984F258AF3C70082CF27 /* anikakuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A984E258AF3C70082CF27 /* anikakuApp.swift */; };
 		2A6A9851258AF3C70082CF27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A9850258AF3C70082CF27 /* ContentView.swift */; };
 		2A6A9853258AF3C80082CF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A9852258AF3C80082CF27 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A18876F258AFE1A0011C6AC /* g_brushtappitsu_freeR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = g_brushtappitsu_freeR.ttf; sourceTree = "<group>"; };
 		2A6A984B258AF3C70082CF27 /* anikaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anikaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6A984E258AF3C70082CF27 /* anikakuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anikakuApp.swift; sourceTree = "<group>"; };
 		2A6A9850258AF3C70082CF27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A18876B258AFDC30011C6AC /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2A18876F258AFE1A0011C6AC /* g_brushtappitsu_freeR.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		2A6A9842258AF3C70082CF27 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		2A6A984D258AF3C70082CF27 /* anikaku */ = {
 			isa = PBXGroup;
 			children = (
+				2A18876B258AFDC30011C6AC /* fonts */,
 				2A6A984E258AF3C70082CF27 /* anikakuApp.swift */,
 				2A6A9850258AF3C70082CF27 /* ContentView.swift */,
 				2A6A9852258AF3C80082CF27 /* Assets.xcassets */,
@@ -233,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A188770258AFE1A0011C6AC /* g_brushtappitsu_freeR.ttf in Resources */,
 				2A6A9856258AF3C80082CF27 /* Preview Assets.xcassets in Resources */,
 				2A6A9853258AF3C80082CF27 /* Assets.xcassets in Resources */,
 			);

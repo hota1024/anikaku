@@ -7,7 +7,32 @@
 
 import SwiftUI
 
+struct Anime {
+    var title: String
+    
+    var maxims: [String]
+}
+
 struct ContentView: View {
+    var animes: [Anime] = [
+        Anime(
+            title: "やはり俺の青春はまちがっている",
+            maxims: [
+                "青春とは嘘であり、悪である。",
+                "みんなでやることが素晴らしくて、みんなでやることがいいことで、じゃあ、一人でやることは悪いことなのか？　どうして、今まで一人でも頑張ってきていた人間が否定されなきゃいけないんだ。",
+            ]
+        )
+    ]
+
+    @State var title = "test"
+    @State var maxim = "test"
+    
+    func pickAnime() {
+        let anime = animes.randomElement()!;
+        title = anime.title;
+        maxim = anime.maxims.randomElement()!;
+    }
+    
     var body: some View {
         ZStack {
             Color(red: 1, green: 0.9, blue: 0.9).edgesIgnoringSafeArea(.all)
@@ -17,7 +42,7 @@ struct ContentView: View {
                     .resizable()
                     .frame(width: 97.6 * 3, height: 70.2 * 3, alignment: .leading)
                     .padding()
-                Text("にゃーん")
+                Text(title)
                     .font(.custom("g_brushtappitsu_freeR", size: 15))
                     .frame(width: 320, height: 50)
                     .foregroundColor(Color.white)
@@ -28,7 +53,7 @@ struct ContentView: View {
                             )
                     )
                 
-                Text("てすと")
+                Text(maxim)
                     .lineLimit(nil)
                     .frame(width: 280, height: 100, alignment: .topLeading)
                     .padding()
@@ -39,7 +64,7 @@ struct ContentView: View {
                     )
                 
                 HStack (spacing: 32.0) {
-                    Button(action: {}) {
+                    Button(action: { pickAnime() }) {
                         Text("生成")
                             .padding(.horizontal, 24)
                             .padding(.vertical, 12)
